@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио</title>
+    <style>
+        body {
+            background-image: url("background 3.jpg");
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+            font-family: "Times New Roman", serif;
+        }
+        
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: top;
+            padding: 14px 118px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .portfolio {
+        display: flex;
+        height: 190vh
+        justify-content: left;
+        color: rgb(255, 255, 255);
+        text-align: :left;
+        font-size: 14px;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+       .portfolio img {
+       animation: fade-in 2s ease-out;
+       max-width: 300px;
+     }
+        
+        .main-content {
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            animation: fade-in 2s;
+        }
+        
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        @media (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .portfolio {
+                flex-direction: column;
+                align-items: center;
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Главная</a>
+        <a href="О себе.html">О себе</a>
+        <a href="Портфолио.html">Портфолио</a>
+        <a href="Блог.html">Блог</a>
+        <a href="Контакты.html">Контакты</a>
+    </div>
+    
+    <div class="main-content">
+        <h1>Мои работы</h1>
+        <p>Здесь вы можете узнать о моих проектах и ознакомиться с моими достижениями в сфере маркетинга, портфолио будет дополнятся и увеличиваться со временем.</p>
+        <!-- Добавьте информацию о своих проектах и изображения для портфолио -->
+    </div>
+        <div class="portfolio">
+      <img src="Ведение одноклассники.jpg" width="300" height="300" alt="Ведение Одноклассники">
+      <h2>Ниша столешниц из литьевого мрамора</h2>
+      <p>Цель работы - прогрев аудитории через социальные сети под малый бюджет. С данным клиентом работаю недавно, поэтому продолжаю сотрудничество с ним до закрытия продаж.</p>
+      </div>
+      <div style="width: 200px;">
+        <div style="height: 20px; margin: 10px;"></div>
+     </div>
+       <div class="portfolio">
+      <img src="Директ.jpg" alt="Изображение портфолио 2">
+      <h2>Ниша авторов дипломных работ</h2>
+      <p>Цель работы - набор авторов дипломных работ на биржу, крайне сложное задание, так как вариативность ключевых слов была минимальной, но сотрудничество завершили с 10% закрытой конверсией<div class=""></div></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О себе</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Times New Roman", Times, serif;
+    }
+    
+    .hero-section {
+      position: relative;
+      height: 120vh;
+      background-image: url("background 2.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(255, 0, 0);
+      text-align: left;
+    }
+    
+    .hero-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-section p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 2s ease-in-out forwards;
+    }
+    
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    .navbar {
+      background-color: #333;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 110px;
+    }
+    .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 32px;
+      }
+    
+      .hero-section p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Главная</a>
+    <a href="О себе.html">О себе</a>
+    <a href="Портфолио.html">Портфолио</a>
+    <a href="Блог.html">Блог</a>
+    <a href="Контакты.html">Контакты</a>
+  </div>
+  
+  <section class="hero-section">
+    <div class="fade-in">
+      <h1>Расскажу о себе чуть побольше.</h1>
+      <p>Меня зовут Дмитрий, я занимаюсь SMM с февраля 2022 года, самоучка, проходивший бесплатные вебинары, совершенствоваший свои навыки через фриланс биржи, я продвигаю любой бизнес в СНГ сегменте, занимаюсь администрированием групп и консультациями в сфере маркетинга.</p>
+      <p>Я давно интегрирую в любой бизнес следующие методы ведения маркетинговых компаний:</p>
+      <p>1. Ведение социальных сетей, групп, каналов, настройка таргетированной рекламы под аудиторию и интеграцию подходящих инструментов к ним.</p>
+      <p>2. SEO продвижение сайтов, оптимизация контента и подключение новых ресурсов для продвижения ниши.</p>
+      <p>3. Анализ рынка, ЦА, составление маркетинговых стратегий исходя из индивидуальных особенностей ниши по своим методикам.</p>
+      <p>4. Создание лендингов, настройка Директа на лендинги и сайты, анализ результата через Метрику и составление стратегии исходя из получаемых данных в реальном времени.</p>
+      <h2>Сотрудничая со мной - вы работаете с высококлассным специалистом, который способен качественно продвигать ваш бизнес</h2>
+      <p>Моё портфолио указано на этом сайте, можете ознакомиться с ним, если вам захочется со мной сотрудничать - я с радостью вам отвечу.</p>
+      <p>Отвечаю на сообщения я чаще всего с 17:00 до 20:00 по МСК. Буду рад сотрудничеству с вами и продвигать ваш бренд в высшую лигу!</p>
+    </div>
+  </section>
+  
+  <script>
+    window.addEventListener("DOMContentLoaded", function(event) {
+      var fadeInSection = document.querySelector(".fade-in");
+      fadeInSection.style.opacity = 1;
+    });
+  </script>
+</body>
+</html>
